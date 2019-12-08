@@ -10,7 +10,7 @@ import unicodedata
 
 normalized=unicodedata.normalize
 
-def unnormalized_passthrough_filter(form, txt):
+def nonnormalized_passthrough_filter(form, txt):
     if form=="NFC":
         for i in range (1,5): #filter calling function
             try:
@@ -22,4 +22,4 @@ def unnormalized_passthrough_filter(form, txt):
                 break
     return normalized(form,txt)
 
-unicodedata.normalize=unnormalized_passthrough_filter
+unicodedata.normalize=nonnormalized_passthrough_filter
