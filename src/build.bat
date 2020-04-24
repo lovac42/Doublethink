@@ -3,7 +3,7 @@ set ZIP=C:\PROGRA~1\7-Zip\7z.exe a -tzip -y -r
 set REPO=doublethink
 set NAME=Doublethink
 set PACKID=1654528592
-set VERSION=0.0.2
+set VERSION=1.0.0
 
 
 echo %VERSION% >%REPO%\VERSION
